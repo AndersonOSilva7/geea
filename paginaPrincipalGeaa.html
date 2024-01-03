@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    
+    <div class="cursor"><img src="CSS\pomba.gif" style="width: 50px";></div>
+        
     <div class="container">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -82,7 +85,7 @@
                             <li>Terças-feiras às 20h: Estudo do Livro dos Espíritos</li>
                             <li>Quintas-feiras: Estudo do Livro dos Médiuns</li>
                             <li>Sábados às 20h: Palestras Públicas</li>
-                            <li>Domingos às 20h: Reunião Mediúnica*</li>
+           .                 <li>Domingos às 20h: Reunião Mediúnica*</li>
                         </ul>
                     </div>
                 </div>
@@ -95,6 +98,18 @@
 
     <p> Aqui fazer outra lista</p>
     </div>
+
+    <script>
+        var pomba = document.querySelector('.cursor');
+        document.addEventListener('mousemove', function(ponteiro){
+           let xPos = ponteiro.pageX;
+           let yPos = ponteiro.pageY;
+           
+           pomba.style.left = xPos+'px';
+           pomba.style.top = yPos+'px';
+        })
+
+    </script>
 </body>
 
 <footer>
